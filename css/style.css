@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: dimgrey;
+}
+
+.download {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border: 3px solid darkred;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+        top: 800px;
+        left: 50%;
+        margin-left: -100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    background-color: gray;
+}
+
+p {
+    text-align: center;
+    background-color: gray;
+}
+
+img {
+    background-color: gray;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.block {
+    width: 500px;
+    height: 100vh;
+    background-color: gray;
+    position: absolute;
+        left: 50%;
+        margin-left: -250px;
+}
