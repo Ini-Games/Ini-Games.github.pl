@@ -7,8 +7,28 @@
 </head>
 <body>
     <div class="block">
-    <h1>Prowid</h1>
-    <p>To jest gra o jednym streamerze. Na czym polega to niespodzianka.</p>
+    <h1>Skrypt na przeciąganie</h1>
+    <p>bool is_moving;
+Point mousePos;
+
+private void flowLayoutPanel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (is_moving == true)
+            {
+                SetDesktopLocation((MousePosition.X - mousePos.X) , (MousePosition.Y - mousePos.Y));
+            }
+        }
+
+
+private void flowLayoutPanel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            mousePos = new Point((MousePosition.X - DesktopLocation.X), (MousePosition.Y - DesktopLocation.Y));
+            is_moving = true;
+        }
+private void flowLayoutPanel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            is_moving = false;
+        }</p>
         </br>
     <p>Twórca: Matrolek</p>
     <img src="img/smile.png" alt="Alternate Text" />
